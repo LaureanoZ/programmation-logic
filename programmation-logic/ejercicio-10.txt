@@ -1,0 +1,10 @@
+var diametro;
+var perimetro;
+var area;
+
+diametro = parseInt(prompt("ingrese el diametro del circulo"));
+perimetro= 3.1416 * diametro;
+radio    = diametro / 2;
+area     = 3.1416 * (radio ** 2);
+
+alert("El perimetro es:" + " " + perimetro + " " + "y el area es:" + " " + area); 

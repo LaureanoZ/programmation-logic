@@ -1,0 +1,16 @@
+var  numero1;
+var  numero2;
+var  numero3;
+var  numero4;
+var  suma;
+var  promedio;
+
+numero1 = parseInt(prompt("Ingrese un numero"));
+numero2 = parseInt(prompt("Ingrese un numero"));
+numero3 = parseInt(prompt("Ingrese un numero"));
+numero4 = parseInt(prompt("Ingrese un numero"));
+
+suma        = numero1 + numero2 + numero3 + numero4;
+promedio    = suma / 4;
+
+alert("La suma es" + " " + suma + " " + "y el promedio es" + " " + promedio);

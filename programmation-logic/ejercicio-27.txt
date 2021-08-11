@@ -1,0 +1,112 @@
+var genero;
+var edad;
+var edadMujer;
+var contadorMujer         = 0;
+var contadorMujerGeneral  = 0;
+var porcentajeEdadMujer;
+var contadorHombre        = 0;
+var contadorHombreGeneral = 0;
+var porcentajeEdadHombre;
+var altura;
+var alturaHombre;
+var promedioAltura;
+var minEdadH;
+var minEdadM
+var maxAlturaH;
+var maxAlturaM;
+var contador              = 0;
+
+do {
+
+    do {
+        genero = prompt("Ingrese h si hombre, ingrese m si es mujer").toLowerCase();
+    } while (genero != "h" && genero != "m")
+    if (genero = "h") {
+        do {
+            edad = parseInt(prompt("Ingrese una edad"));
+        } while (isNaN(edad))
+        if(edad < 18){
+            contadorHombre++;
+        }
+        if (contador == 0) {
+            minEdadH = edad;
+        }
+        else (edad < minEdadH)
+        {
+            minEdadH = edad;
+        }
+
+        
+        do {
+            altura = parseFloat(prompt("Ingrese una altura en cm"));
+        } while (isNaN(altura))
+        if (contador == 0) {
+            maxAlturaH = altura;
+        }
+        else (altura > maxAlturaH)
+        {
+            maxAlturaH = altura;
+        }
+        alturaHombre += altura;
+
+     contadorHombreGeneral++;   
+    }
+    else {
+        do {
+            edad = parseInt(prompt("Ingrese una edad"));
+        } while (isNaN(edad))
+        if (edad > 25) {
+            contadorMujer++
+        }
+        if (contador == 0) {
+            minEdadM = edad;
+        }
+        else (edad < minEdadM)
+        {
+            minEdadM = edad;
+        }
+        edadMujer += edad;   
+        
+        
+        do {
+            altura = parseFloat(prompt("Ingrese una altura en cm"));
+        } while (isNaN(altura))
+        if (contador == 0) {
+            maxAlturaM = altura;
+        }
+        else (altura > maxAlturaM)
+        {
+            maxAlturaM = altura;
+        }
+ 
+    }
+    contadorMujerGeneral++;
+} while (confirm("Quieres seguir agregando datos?"))
+
+porcentajeEdadMujer = contadorMujer / contadorMujerGeneral * 100 ;
+
+porcentajeEdadHombre = contadorHombre / contadorHombreGeneral * 100;
+
+promedioEdadMujer = edadMujer / contadorMujerGeneral;
+
+promedioAltura = alturaHombre / contadorHombreGeneral;
+
+alert(`el porcentaje de mujeres mayores a 25 años es de ${porcentajeEdadMujer}
+ y el porcentaje de hombres menores a 18 es de ${porcentajeEdadHombre}`)
+
+alert(`el promedio de edad de mujeres es de ${promedioEdadMujer}
+y el promedio de altura de los hombres es de ${promedioAltura}`)
+
+if(minEdadH < minEdadM){
+    alert (`La edad minima es ${minEdadH}`)
+}
+else{
+    alert (`La edad minima es ${minEdadM}`)
+}
+
+if(maxAlturaH > maxAlturaM){
+    alert (`La altura maxima es de ${maxAlturaH}`)
+}
+else{
+    alert (`La altura maxima es de ${maxAlturaM}`)
+}

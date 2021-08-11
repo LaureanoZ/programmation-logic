@@ -1,0 +1,7 @@
+1. buscar 1 transportador
+2. buscar 1 hoja 
+3. apoyar la punta metalica del tranportador en la hoja
+4. abrir el transportador 
+5. apoyar en la hoja la punta que dispone de una mina de lapiz
+6. dejar la punta metalica quieta en la hoja
+7. trazar con la punta de lapiz una circulo

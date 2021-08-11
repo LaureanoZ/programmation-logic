@@ -1,0 +1,9 @@
+var numero1
+var numero2
+
+
+ING numero1
+ING numero2
+
+
+MOSTRAR "el resto es" + " " + numero1%numero2

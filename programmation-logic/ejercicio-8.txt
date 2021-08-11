@@ -1,0 +1,11 @@
+var diametro
+var perimetro
+var area
+
+ING diametro
+
+perimetro = 2(3.1416) * diametro
+radio     = diametro / 2
+area      = 3.1416 * radio ** 2
+
+MOSTRAR "El perimetro es:" + " " + perimetro + " " + "y el area es:" + " " + area

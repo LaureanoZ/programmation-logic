@@ -1,0 +1,31 @@
+var numero;
+var numeroImpar = 0;
+var minimo;
+var maximo;
+var contador = 0;
+
+do{
+    do{
+        numero = parseInt(prompt("Ingrese un numero por favor"));
+    } while(isNaN(numero))
+
+    if(numero % 2 != 0 ){
+        numeroImpar += numero;
+    }
+    if(contador == 0){
+        minimo = numero;
+        maximo = numero;
+    }
+    else{
+        if(numero < minimo){
+            minimo = numero;
+        }
+        if(numero > maximo){
+            maximo = numero;
+        }
+    }
+contador++;
+} while (confirm("queres seguir ingresando numeros?"))
+    
+alert(`el numero maximo es ${maximo} y el minimo ${minimo}`)
+alert(`la sumatoria de numeros impares es: ${numeroImpar}`)

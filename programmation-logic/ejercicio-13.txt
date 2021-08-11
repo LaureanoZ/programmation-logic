@@ -1,0 +1,18 @@
+var valorHora;
+var horasTrabajadas;
+var aniosAntiguedad;
+var sueldoMensual;
+var aniosAntiguedadCalculo;
+var sueldoMensualTotal
+var aniosAntiguedadTotal
+
+valorHora              = parseInt(prompt("Ingrese el valor de la hora"));
+horasTrabajadas        = parseInt(prompt("Ingrese la cantidad de horas trabajadas"));
+aniosAntiguedad        = parseInt(prompt("Ingrese sus años de antiguedad"));
+sueldoMensual          = valorHora * horasTrabajadas;
+aniosAntiguedadCalculo = (sueldoMensual * 15) / 100;
+aniosAntiguedadTotal   = aniosAntiguedadCalculo * aniosAntiguedad;
+sueldoMensualTotal     = valorHora * horasTrabajadas + aniosAntiguedadTotal;
+
+
+alert("Su salario mensual sumado a su antigüedad es de:" + " " + sueldoMensualTotal);

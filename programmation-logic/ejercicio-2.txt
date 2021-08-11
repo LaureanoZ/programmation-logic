@@ -1,0 +1,8 @@
+1. buscar una hoja
+2. buscar lapiz o lapicera
+3. buscar una regla
+4. apoyar la regla en posicion vertical sobre la hoja
+5. elejir la medida de la altura (5cm)
+6. trazar una linea recta con el lapiz usando de guia la regla y respetando la medida deseada (5cm)
+7. repetir el mismo proceso (4,5,6) 2 veces en horizontal, iniciando una desde el fin y otra desde el principio de la linea
+8. repetir el mismo proceso (4,5,6), ubicando la linea en el el final de las dos lineas horizontales

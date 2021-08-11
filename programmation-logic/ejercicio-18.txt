@@ -1,0 +1,30 @@
+var numeroMenor;
+var numeroMayor;
+var rangoNumerico;
+var numero;
+var total;
+
+numeroMenor =   parseInt(prompt("Ingrese el numero menor del rango numerico."));
+numeroMayor =   parseInt(prompt("Ingrese el numero mayor del rango numerico."));
+numero      =   parseInt(prompt("Ingrese un numero dentro del rango numerico que indico."));
+
+rangoNumerico   =   numeroMayor - numeroMenor;
+total           =   numero  %   2;
+
+if  (rangoNumerico  < 5){
+    alert("El rango numerico es menor a 5, introduzca un rango mayor a 5.");
+} else if(numero < numeroMenor || numero > numeroMayor){
+    if(total == 0){
+        alert("NO esta dentro del rango y no es impar.");
+    }
+    else{
+        alert("NO esta dentro del rango y es impar.")
+    }
+}
+
+else if(total == 0){
+        alert("Esta dentro del rango y es par.");
+}
+else{
+    alert("Esta dentro del rango y no es par.");
+}
